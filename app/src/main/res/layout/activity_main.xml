@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mountain"
+    android:backgroundTint="@color/overlay"
+    android:backgroundTintMode="src_over"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="30dp"
+        android:paddingBottom="0dp"
+        android:paddingHorizontal="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/firstWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/first_welcome"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/secondWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstWelcome"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/second_welcome"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+
+            <TextView
+                android:id="@+id/thirdWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondWelcome"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/third_welcome"
+                android:textColor="@color/yellow"
+                android:textSize="38sp" />
+
+            <LinearLayout
+                android:id="@+id/searchMountain"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/thirdWelcome"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_background">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/semeru"
+                    android:textSize="17sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/locationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchMountain"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/mountain_location"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:id="@+id/eastJava"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/locationTitle"
+                android:layout_marginTop="20dp"
+                android:paddingStart="20dp"
+                android:paddingVertical="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_background">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/architects_daughter"
+                    android:text="@string/east_java"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/mountain1"
+                    android:contentDescription="@string/east_java" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/centralJava"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eastJava"
+                android:layout_marginTop="20dp"
+                android:paddingStart="20dp"
+                android:paddingVertical="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_background">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/architects_daughter"
+                    android:text="@string/central_java"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/mountain2"
+                    android:contentDescription="@string/central_java" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/westJava"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/centralJava"
+                android:layout_marginTop="20dp"
+                android:paddingStart="20dp"
+                android:paddingVertical="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_background">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/architects_daughter"
+                    android:text="@string/west_java"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/mountain3"
+                    android:contentDescription="@string/west_java" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/outsideJava"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/westJava"
+                android:layout_marginTop="20dp"
+                android:paddingStart="20dp"
+                android:paddingVertical="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_background">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/architects_daughter"
+                    android:text="@string/outside_java"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/mountain4"
+                    android:contentDescription="@string/outside_java" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</LinearLayout>

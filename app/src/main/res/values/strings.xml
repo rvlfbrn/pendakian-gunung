@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Pendakian Gunung</string>
+
+    <string name="first_welcome">Halo, Pendaki</string>
+    <string name="second_welcome">Ayo mulai</string>
+    <string name="third_welcome">Petualanganmu</string>
+
+    <string name="semeru">Semeru</string>
+
+    <string name="mountain_location">Lokasi Gunung</string>
+
+    <string name="east_java">Jawa Timur</string>
+    <string name="central_java">Jawa Tengah</string>
+    <string name="west_java">Jawa Barat</string>
+    <string name="outside_java">Luar Pulau Jawa</string>
+
+    <string name="home_menu">Beranda</string>
+    <string name="tool_menu">Peralatan</string>
+    <string name="tip_menu">Tips</string>
+
+    <string name="track">Jalur Pendakian</string>
+    <string name="info">Informasi Gunung</string>
+
+    <string name="tipe">Tipe</string>
+    <string name="tips">Info &amp; Tips</string>
+</resources>
